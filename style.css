@@ -1,0 +1,268 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header {
+    background:#000;
+}
+.header .container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0 0 0 -45px;
+}
+.btn-menu div {
+    width: 40px; 
+    height: 5px;
+    margin: 6px 0;
+    background:white;
+}
+.btn { 
+    padding: 10px 24px;
+    background: #000000;
+    border: 1px solid #fff;
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+}
+.all {
+    background-image: url(../Work_Last/img/main-photo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height:600px;
+    max-width: 1000px;
+    margin-left: 10%;
+}
+.second {
+    display: block;
+    position: absolute;
+    text-align: right;
+    line-height: 32px;
+    max-width: 1000px;
+    margin-left:490px;
+    padding: 6px 0 106px 440px;
+    background: linear-gradient(270deg, #FFFFFF 53.4%, rgba(255, 255, 255, 0) 95.75%);
+}
+.title {
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 106px;
+    
+}
+.info {
+    font-size: 20px;
+    padding-top: 40px;
+}
+.two {
+    margin-top: 40px;
+    color: black;
+    background: white ;
+    border: 1px solid #000;
+}
+.products {
+    background: #000;
+    height: 965px;
+    padding: 60px;
+}
+.products .container {
+    height: 505px;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    width: 420px;
+    height: 505px;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    position: relative;
+}
+.box-details {
+    width: 100px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #000000;
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    margin: -40px 0 0;
+    text-align: center;
+}
+.box-details * {
+    visibility: hidden;
+}
+.box:hover .box-details {
+    width: 100%;
+    height: 505px;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+  .box:hover .box-details * {
+    visibility: visible;
+}
+.information {
+    position: static;
+    color:white;
+    line-height: 32px;
+    text-align: center;
+
+}
+.information h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 60px 213px 40px;
+}
+.information p {
+    margin: 0 auto;
+    width: 1320;
+    font-size: 20px;
+    padding: 0px 232px 70px;
+}
+.three {
+    margin-bottom: 60px;
+}
+.navigator {
+    display: flex;
+    justify-content:space-between;
+    padding: 60px 232px 60px;
+}
+.navigator a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    line-height: 32px;
+    
+}
+
+/* tablet */
+@media only screen
+and (min-width: 1024px)
+and (max-width: 1200px) {
+    .header {
+    background: red;
+    }
+    .header .container {
+        padding: 0 40px;
+    }
+}
+/* mobile */
+@media only screen
+and (min-width: 320px)
+and (max-width: 1023px) {
+    .header {
+    background: pink;
+    }
+    .header .container {
+        padding: 0 20px;
+    }
+    .header .btn {
+        display: none;
+    }
+    .logo {
+        position: static;
+    }
+    .all {
+        background-image: none;
+        background-size: 0%;
+        margin-left: 0%;
+    }
+    .second {
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        margin-left: 0%;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .products {
+        height: 150vh;
+    }
+    .products .container {
+        flex-wrap: wrap;
+        padding-left: 25%;
+        padding-right: 25%;
+        margin-bottom: 25%;
+    }
+    .box {
+        top: 10%;
+        bottom: 25%;
+        display: block;
+
+    }
+    .box-details * {
+        visibility:visible;
+    }
+    .box:hover .box-details * {
+        visibility: none;
+    }
+    .information {
+        position: absolute;
+        padding-top: 90%;
+    }
+    .navigator {
+        display: none;
+    }
+}
